@@ -1423,7 +1423,7 @@ UniValue lifetime(const UniValue& params, bool fHelp)
 
 UniValue magnitude(const UniValue& params, bool fHelp)
 {
-    if (fHelp || params.size() > 1)
+    if (fHelp || params.size() < 1)
         throw runtime_error(
                 "magnitude <cpid>\n"
                 "\n"
